@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPostActivity"
+    android:layout_margin="15dp">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+        <ImageButton
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/image_outline"
+            android:tooltipText="Click To Add"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/onImgClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Click To Add from Gallery"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/post_title"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:hint="Post Title"
+
+        />
+        <EditText
+            android:id="@+id/post_desc"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:hint="Post Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+
+
+            />
+    <Button
+        android:id="@+id/share_btn"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share A Post"
+
+        />
+</LinearLayout>
